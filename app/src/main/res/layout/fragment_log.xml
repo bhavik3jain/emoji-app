@@ -1,0 +1,758 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.imoody.activity.LogFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="495dp">
+        <LinearLayout
+            android:id="@+id/lin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/profile_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_cover_image"
+                android:background="@color/grey"
+                android:elevation="4dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:text="Log Your Moods!"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayout1"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/emoji1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/emoji_1f631"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="20dp"/>
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekBar1"
+                    android:max="10"
+                    android:progress="0"
+                    android:layout_alignTop="@+id/emoji1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="75dp" />
+
+                <TextView
+                    android:id="@+id/seek1Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="60dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayout2"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/emoji2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/emoji_1f621"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="20dp"/>
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekBar2"
+                    android:max="10"
+                    android:progress="0"
+                    android:layout_alignTop="@+id/emoji2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="75dp" />
+
+                <TextView
+                    android:id="@+id/seek2Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="60dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayout3"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/emoji3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/emoji_1f630"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="20dp"/>
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekBar3"
+                    android:max="10"
+                    android:progress="0"
+                    android:layout_alignTop="@+id/emoji3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="75dp" />
+
+                <TextView
+                    android:id="@+id/seek3Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="60dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayout4"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/emoji4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/emoji_1f602"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="20dp"/>
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekBar4"
+                    android:max="10"
+                    android:progress="0"
+                    android:layout_alignTop="@+id/emoji4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="75dp" />
+
+                <TextView
+                    android:id="@+id/seek4Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="60dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayout5"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/emoji5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/emoji_1f601"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="20dp"/>
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekBar5"
+                    android:max="10"
+                    android:progress="0"
+                    android:layout_alignTop="@+id/emoji5"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="75dp" />
+
+                <TextView
+                    android:id="@+id/seek5Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="60dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayout6"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/emoji6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/emoji_1f64f"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="20dp"/>
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekBar6"
+                    android:max="10"
+                    android:progress="0"
+                    android:layout_alignTop="@+id/emoji6"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="75dp" />
+
+                <TextView
+                    android:id="@+id/seek6Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="60dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayout7"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/emoji7"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/emoji_1f62f"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="20dp"/>
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekBar7"
+                    android:max="10"
+                    android:progress="0"
+                    android:layout_alignTop="@+id/emoji7"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="75dp" />
+
+                <TextView
+                    android:id="@+id/seek7Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="60dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayout8"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/emoji8"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/emoji_1f635"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="20dp"/>
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekBar8"
+                    android:max="10"
+                    android:progress="0"
+                    android:layout_alignTop="@+id/emoji8"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="75dp" />
+
+                <TextView
+                    android:id="@+id/seek8Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="60dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayout9"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/emoji9"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/emoji_1f60d"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="20dp"/>
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekBar9"
+                    android:max="10"
+                    android:progress="0"
+                    android:layout_alignTop="@+id/emoji9"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="75dp" />
+
+                <TextView
+                    android:id="@+id/seek9Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="60dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayout10"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/emoji10"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/emoji_1f614"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="20dp"/>
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekBar10"
+                    android:max="10"
+                    android:progress="0"
+                    android:layout_alignTop="@+id/emoji10"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="75dp" />
+
+                <TextView
+                    android:id="@+id/seek10Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="60dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayout11"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/emoji11"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/emoji_1f614"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="20dp"/>
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekBar11"
+                    android:max="10"
+                    android:progress="0"
+                    android:layout_alignTop="@+id/emoji11"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="75dp" />
+
+                <TextView
+                    android:id="@+id/seek11Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="60dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayout12"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/emoji12"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/emoji_1f614"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="20dp"/>
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekBar12"
+                    android:max="10"
+                    android:progress="0"
+                    android:layout_alignTop="@+id/emoji12"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="75dp" />
+
+                <TextView
+                    android:id="@+id/seek12Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="60dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayout13"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/emoji13"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/emoji_1f614"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="20dp"/>
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekBar13"
+                    android:max="10"
+                    android:progress="0"
+                    android:layout_alignTop="@+id/emoji13"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="75dp" />
+
+                <TextView
+                    android:id="@+id/seek13Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="60dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayout14"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/emoji14"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/emoji_1f614"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="20dp"/>
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekBar14"
+                    android:max="10"
+                    android:progress="0"
+                    android:layout_alignTop="@+id/emoji14"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="75dp" />
+
+                <TextView
+                    android:id="@+id/seek14Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="60dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayout15"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/emoji15"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/emoji_1f614"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="20dp"/>
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekBar15"
+                    android:max="10"
+                    android:progress="0"
+                    android:layout_alignTop="@+id/emoji15"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="75dp" />
+
+                <TextView
+                    android:id="@+id/seek15Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="60dp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fab_ic_add"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="2dp"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        app:borderWidth="0dp"/>
+</RelativeLayout>

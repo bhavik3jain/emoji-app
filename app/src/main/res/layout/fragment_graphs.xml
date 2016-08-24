@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/initialSetUp">
+
+    <RelativeLayout
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1B5E20"
+        android:elevation="4dp"
+        android:paddingBottom="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/user_profile_short_bio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_profile_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Select a Graph Style!"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_layout">
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/myRadioGroup"
+            android:orientation="vertical"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bar Graph"
+                android:textStyle="bold"
+                android:id="@+id/radioButton" />
+
+            <ImageView
+                android:id="@+id/header_cover_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/bar" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Line Graph"
+                android:textStyle="bold"
+                android:id="@+id/radioButton2" />
+
+            <ImageView
+                android:id="@+id/header_cover_image2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/line" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pie Chart"
+                android:textStyle="bold"
+                android:id="@+id/radioButton3" />
+
+            <ImageView
+                android:id="@+id/header_cover_image3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/pie" />
+        </RadioGroup>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/fab_button_margin_bottom"
+        android:layout_marginRight="@dimen/fab_button_margin_right"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        app:borderWidth="0dp"/>
+
+</RelativeLayout>
